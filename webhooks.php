@@ -18,6 +18,8 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['source']['userId'];
 			// Get replyToken
+			file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
+			
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
