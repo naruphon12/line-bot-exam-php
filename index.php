@@ -6,7 +6,7 @@
 <body>
   <?php
   
-$client = new SoapClient('http://localhost:52108/WebService.asmx?WSDL',array('trace'=>true));
+$client = new SoapClient('http://feedkbf.cpf.co.th/FeedWsKABIN/WebService.asmx?WSDL',array('trace'=>true));
   try
   {
   $params = array('a'=>5,''b=>8);
