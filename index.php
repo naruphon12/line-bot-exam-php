@@ -6,14 +6,7 @@
 <body>
   <?php
   
-$client = new SoapClient('http://feedkbf.cpf.co.th/FeedWsKABIN/WebService.asmx?WSDL',array('trace'=>true));
-  try
-  {
-  $params = array('a'=>5,''b=>8);
-  $result = $client->countnum($params)->countnumResult;
-  }catch(SoapFault $ex){
-    print $ex
-  }
+
   echo "hello".$result
 
 ?>
